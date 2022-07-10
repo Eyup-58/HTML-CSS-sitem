@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self made </title>
+    <link rel="stylesheet" href="selfmade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Finlandica:ital@0;1&family=Gulzar&family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <nav class="navbar">
+            <a href="" class="logo"> Self <span>Made</span></a>
+           
+           <div class="nav-links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="https://github.com/Eyup-58" target="_blank" title="İf you want to see my projects click on it ">GitHub</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="begin">
+            <h1>Hi My Name İs Eyüp</h1>
+            <p>I really wish to work in your company as a front-end devoloper. I know that ı dont have that much experience <br> but ı have a ambition and ı want to improve  myself and add experience to myself with you.</p>
+        </div>
+    </div>
+
+    <section class="began">
+        <div class="textme">
+            <div class="textright">
+                <h1>Bana mail atmak için</h1>
+                <form class="places" method="post" onsubmit="sendEmail();  reset(); return false;">
+                   Ad: <input type="text" placeholder=" İsim" class="nbr">
+                   Soy Ad: <input type="text" placeholder=" Soy Ad" class="nbr">
+                   Metin: <textarea  cols="40" rows="10 " class="nbr"></textarea>
+                    e-mail:    <input type="email" placeholder="" class="nbr">
+                    <div class="btnbox">
+
+                        <button class="Gönder">Gönder</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() { 
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "eyupy59334@gmail.com",
+    Password : "Eyup05581907",
+    To : 'eyupy5953@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Yeni contact bölümü ",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+         }
+
+
+
+    </script>
+</body>
+</html>
